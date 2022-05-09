@@ -9,6 +9,7 @@ class BootStrap {
     }
 
     def createObjectTest() {
-        new Book(nombre: "Principito").save(flush: true)
+        if (!Book.findByNombre("Principito"))
+            new Book(nombre: "Principito").save(flush: true)
     }
 }
