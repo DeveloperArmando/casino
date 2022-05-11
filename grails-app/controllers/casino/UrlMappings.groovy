@@ -15,6 +15,7 @@ class UrlMappings {
         "404"(view: '/notFound')
 
 
-        "/api/guest/testPepe"(controller: 'product', action: 'test')
+        get "/api/guest/testPepe"(controller: 'product', action: 'test')
+        get "/api/guest/testI18n"(controller: 'product', action: 'testI18n')
     }
 }
