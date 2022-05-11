@@ -7,16 +7,10 @@ import casino.security.UserRole
 class BootStrap {
 
     def init = { servletContext ->
-        createObjectTest()
         createRolesAndUsers()
         createProducts()
     }
     def destroy = {
-    }
-
-    def createObjectTest() {
-        if (!Book.findByNombre("Principito"))
-            new Book(nombre: "Principito").save(flush: true)
     }
 
     def createRolesAndUsers() {

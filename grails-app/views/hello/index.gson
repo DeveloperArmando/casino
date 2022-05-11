@@ -1,8 +1,0 @@
-model {
-    String name
-}
-
-json {
-    username name
-    saludo "Especial a Hanimocha"
-}
